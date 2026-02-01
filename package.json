@@ -1,0 +1,37 @@
+{
+  "name": "nurture-backend",
+  "version": "1.0.0",
+  "description": "Backend for Nurture - a couples relationship improvement app using Clerk authentication and Firebase Firestore",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nurture",
+    "relationships",
+    "couples",
+    "clerk",
+    "firebase",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@clerk/clerk-sdk-node": "^4.13.23",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "firebase-admin": "^13.6.0",
+    "svix": "^1.84.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
