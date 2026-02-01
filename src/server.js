@@ -71,10 +71,13 @@ app.listen(PORT, () => {
   console.log(`Time: ${new Date().toISOString()}`);
   console.log('');
   console.log('Available endpoints:');
-  console.log(`  GET  /health - Health check`);
-  console.log(`  POST /api/auth/webhook - Clerk webhook`);
-  console.log(`  GET  /api/auth/me - Get current user (protected)`);
-  console.log(`  GET  /api/users/profile - Get user profile (protected)`);
+  console.log(`  GET   /health - Health check`);
+  console.log(`  POST  /api/auth/signup - Sign up new user`);
+  console.log(`  POST  /api/auth/signin - Sign in user`);
+  console.log(`  POST  /api/auth/signout - Sign out user`);
+  console.log(`  POST  /api/auth/webhook - Clerk webhook`);
+  console.log(`  GET   /api/auth/me - Get current user (protected)`);
+  console.log(`  GET   /api/users/profile - Get user profile (protected)`);
   console.log(`  PATCH /api/users/profile - Update user profile (protected)`);
   console.log('');
 });
